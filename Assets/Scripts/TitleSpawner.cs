@@ -34,8 +34,10 @@ public class TitleSpawner : MonoBehaviour
     {
         GameObject selectedFood = prefabs[Random.Range(0, prefabs.Count)];
 
-        Vector3 spawnPosition = new Vector3(Random.Range(11.735f, 15.785f), 60.999f, -86.268f);
+        Vector3 spawnPosition = new Vector3(Random.Range(12f, 16f), Random.Range(65f, 90f), -86f);
 
-        Instantiate(selectedFood, spawnPosition, Quaternion.identity);
+        GameObject foodObject = Instantiate(selectedFood, spawnPosition, Quaternion.identity);
+
+        foodObject.AddComponent<TitleFoods>();
     }
 }
