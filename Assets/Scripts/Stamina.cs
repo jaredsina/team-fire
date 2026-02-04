@@ -5,7 +5,7 @@ public class Stamina : MonoBehaviour
 {
     [SerializeField] MicroBar staminaBar;
 
-    float regenAmount = 5f;
+    float regenAmount = 10f;
 
     private void Start()
     {
