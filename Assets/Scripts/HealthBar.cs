@@ -1,7 +1,7 @@
 using UnityEngine;
 using Microlight.MicroBar;
 
-public class Health : MonoBehaviour
+public class HealthBar : MonoBehaviour
 {
     [SerializeField] MicroBar healthBar;
 
