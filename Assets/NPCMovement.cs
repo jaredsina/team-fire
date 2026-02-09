@@ -3,8 +3,9 @@ using UnityEngine.AI; // Required for NavMesh features
 
 public class NPCMovement : MonoBehaviour
 {
-    public Transform player;
+    private Transform player;
     public NavMeshAgent agent;
+    public float RandomPositions;
 
     void Update()
     {
@@ -29,6 +30,11 @@ public class NPCMovement : MonoBehaviour
             Destroy(gameObject);
             Debug.Log("Hit: ");
         }
+    }
+
+    void Start()
+    {
+        player = GameObject.FindWithTag("Player").transform;
     }
 }
 
