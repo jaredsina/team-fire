@@ -4,7 +4,7 @@ using TMPro;
 public class GoldScript : MonoBehaviour
 {
 
-    float goldAmount = 0f;
+    float goldAmount = 10f;
     public TMP_Text goldText;
 
     public void ChangeGold(float goldChange)
@@ -15,5 +15,9 @@ public class GoldScript : MonoBehaviour
             goldAmount = 0f;
         }
         goldText.text = goldAmount.ToString();
+    }
+
+    public float GetGoldAmount(){
+        return goldAmount;
     }
 }
