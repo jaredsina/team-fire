@@ -2565,6 +2565,8 @@ MonoBehaviour:
   - 
   slot1: {fileID: 1362896641}
   slot2: {fileID: 1199213000}
+  selectedSprite: {fileID: 21300000, guid: b6c165c1a6b804e46b2bd7317d622c37, type: 3}
+  unselectedSprite: {fileID: 21300000, guid: fe5d906d21d55a0409469d19f70db4d9, type: 3}
 --- !u!1 &1501767522
 GameObject:
   m_ObjectHideFlags: 0
