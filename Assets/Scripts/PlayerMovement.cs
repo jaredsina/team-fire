@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(direction * walkSpeed * Time.deltaTime);
 
         //float SpaceInput = Input.GetAxis("Jump");
-        if(direction.magnitude > 0.1f)
+        if(direction.magnitude > 0.1f && isGrounded)
         {
             anim.SetBool("Walking", true);
 
@@ -53,7 +53,7 @@ public class PlayerMovement : MonoBehaviour
 
             // maybe this
             anim.SetBool("isJumping", false);
-            anim.SetBool("isBreathing", true);ß
+            anim.SetBool("isBreathing", true);
             
 
 
@@ -62,19 +62,21 @@ public class PlayerMovement : MonoBehaviour
                 
                 velocity.y = -2f;
             }
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
          {
             // Jump
             anim.SetBool("isJumping", true);
             anim.SetBool("Walking", false);
             anim.SetBool("isRunning", false);
             anim.SetBool("isBreathing", false);
+            isGrounded = false;
             velocity.y = Mathf.Sqrt(jumpForce * -2f * gravity);
         }
 
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.LeftShift) && isGrounded)
         {
             //Sprint
+            //Debug.Log(isGrounded);
             walkSpeed = 30f;
             anim.SetBool("isRunning", true);
 
@@ -94,10 +96,10 @@ public class PlayerMovement : MonoBehaviour
             //Vector3 move = transform.right * horizontalInput + transform.forward * verticalInput;
             //transform.position += move * currentSpeed * Time.deltaTime;
         }
-        else
-        {
-            anim.SetBool("isJumping", true);
-        }
+        //else
+        //{
+        //    anim.SetBool("isJumping", true);
+        //}
 
         //Debug.Log("Horizontal Input: " + horizontalInput + " Vertical Input: " + verticalInput);
 
@@ -112,3 +114,6 @@ public class PlayerMovement : MonoBehaviour
     }
     
 }
+
+//make the changes  to the code and then add summary, then commit, then after commit push into remote, then pull request for dev
+//once the changes are in dev, delete current branch, and make a new branch from updated dev, and then make the player walk in main scene
