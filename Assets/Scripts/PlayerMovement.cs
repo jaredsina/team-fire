@@ -7,8 +7,8 @@ public class PlayerMovement : MonoBehaviour
     public Animator anim;
     //[SerializeField] private InputActionProperty moveAction;
 
-    private float walkSpeed = 10f;
-    private float jumpForce = 10f;
+    private float walkSpeed = 5f;
+    private float jumpForce = 5f;
     private float gravity = -20f;
     private Vector3 velocity;
     private bool isGrounded;
