@@ -7,10 +7,10 @@ public class PlayerMovement : MonoBehaviour
     public Animator anim;
     //[SerializeField] private InputActionProperty moveAction;
 
-    private float walkSpeed = 10f;
-    private float jumpForce = 10f;
-    private float gravity = -20f;
-    private Vector3 velocity;
+    public float walkSpeed;
+    public float jumpForce;
+    public float gravity;
+    public Vector3 velocity;
     private bool isGrounded;
     private float rotationSpeed = 100f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -77,14 +77,14 @@ public class PlayerMovement : MonoBehaviour
         {
             //Sprint
             //Debug.Log(isGrounded);
-            walkSpeed = 30f;
+            walkSpeed = 3f;
             anim.SetBool("isRunning", true);
 
             anim.SetBool("Walking", false);
         }
             else
             {
-                walkSpeed = 10f;
+                walkSpeed = 1f;
                 anim.SetBool("isRunning", false);
 
 
