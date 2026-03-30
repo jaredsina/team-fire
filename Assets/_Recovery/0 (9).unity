@@ -1684,19 +1684,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1057887552}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1481295539}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1057887552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2400,19 +2388,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1256906262}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1481295545}
-        m_TargetAssemblyTypeName: BananaInventory, Assembly-CSharp
-        m_MethodName: BananaName
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1256906262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3028,7 +3004,6 @@ GameObject:
   - component: {fileID: 1481295542}
   - component: {fileID: 1481295543}
   - component: {fileID: 1481295544}
-  - component: {fileID: 1481295545}
   m_Layer: 0
   m_Name: SceneController
   m_TagString: Untagged
@@ -3103,51 +3078,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Inventory
   TestFood: {fileID: 1057887549}
-  TestBanana: {fileID: 1256906259}
-  TestGrape: {fileID: 0}
-  TestBagguette: {fileID: 0}
-  TestCarrot: {fileID: 0}
-  TestSalmon: {fileID: 0}
-  TestTortilla: {fileID: 0}
+  TestBanana: {fileID: 0}
   selectedSlot: 0
   inventory:
   - 
   - 
   slot1: {fileID: 1362896641}
   slot2: {fileID: 1199213000}
-  image1: {fileID: 1048786746}
-  image2: {fileID: 1892937263}
-  selectedSprite: {fileID: 21300000, guid: b6c165c1a6b804e46b2bd7317d622c37, type: 3}
-  unselectedSprite: {fileID: 21300000, guid: fe5d906d21d55a0409469d19f70db4d9, type: 3}
---- !u!114 &1481295545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1481295539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37ca6a7224ea487448a2b3feb81d51f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BananaInventory
-  TestFood: {fileID: 1057887549}
-  TestBanana: {fileID: 1256906259}
-  TestGrape: {fileID: 0}
-  TestBagguette: {fileID: 0}
-  TestCarrot: {fileID: 0}
-  TestSalmon: {fileID: 0}
-  TestTortilla: {fileID: 0}
-  selectedSlot: 0
-  inventory:
-  - 
-  - 
-  slot1: {fileID: 0}
-  slot2: {fileID: 0}
   image1: {fileID: 0}
   image2: {fileID: 0}
-  selectedSprite: {fileID: 0}
-  unselectedSprite: {fileID: 0}
+  selectedSprite: {fileID: 21300000, guid: b6c165c1a6b804e46b2bd7317d622c37, type: 3}
+  unselectedSprite: {fileID: 21300000, guid: fe5d906d21d55a0409469d19f70db4d9, type: 3}
 --- !u!1 &1501767522
 GameObject:
   m_ObjectHideFlags: 0
